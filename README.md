@@ -1,2 +1,2 @@
 # BoundedContext
-A bounded context sample for ES-1 architecture
+A bounded context sample for ESF_1 architecture
