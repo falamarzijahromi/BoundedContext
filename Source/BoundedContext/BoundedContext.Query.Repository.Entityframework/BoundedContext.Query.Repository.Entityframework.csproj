@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.entityframeworkcore" Version="2.2.4" />
+    <PackageReference Include="microsoft.entityframeworkcore.Relational" Version="2.2.4" />
+    <PackageReference Include="microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+    <PackageReference Include="microsoft.entityframeworkcore.tools" Version="2.2.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Query1\Exceptions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BoundedContext.Contracts\BoundedContext.Contracts.csproj" />
+    <ProjectReference Include="..\BoundedContext.Query.Repository.Entityframework\BoundedContext.Query.Repository.Entityframework.csproj" />
+  </ItemGroup>
+
+</Project>
