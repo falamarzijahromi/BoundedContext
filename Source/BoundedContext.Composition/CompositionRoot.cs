@@ -1,11 +1,70 @@
-﻿using System;
+﻿using BoundedContext.Application.Service1;
+using BoundedContext.Query.Query1;
+using BoundedContext.Query.Repository.Entityframework;
+using BoundedContext.Repository.Entityframework;
+using BoundedContext.Services.Acls.SomethingServices;
+using Composition.ESF_1;
+using Interceptors.ESF_1;
+using UnitOfWork.ESF_1;
 
 namespace BoundedContext.Composition
 {
     public static class CompositionRoot
     {
-        public static void RegisterDependecies()
+        public static void RegisterDependecies(IIocContainer container)
         {
+            RegisterRepos(container);
+
+            RegisterServices(container);
+
+            RegisterApplications(container);
+
+            RegisterQueries(container);
+
+            RegisterDbContexts(container);
+        }
+
+        private static void RegisterDbContexts(IIocContainer container)
+        {
+            container.RegisterFactory(
+                new[] { typeof(IUnitOfWork), typeof(CommandDbContext) },
+                () =>
+                {
+                    var factory = new CommandDbContextFactory();
+
+                    return factory.CreateDbContext(new string[0]);
+                });
+
+            container.RegisterFactory(
+                new[] { typeof(QueryDbContext) },
+                () =>
+                {
+                    var factory = new QueryDbContextFactory();
+
+                    return factory.CreateDbContext(new string[0]);
+                });
+        }
+
+        private static void RegisterQueries(IIocContainer container)
+        {
+            container.RegisterAllServicesPerGraph(typeof(Query1).Assembly);
+        }
+
+        private static void RegisterApplications(IIocContainer container)
+        {
+            container.RegisterAllServicesPerGraph(
+                typeof(Service1).Assembly,
+                new[] { typeof(TransactionInterceptor) });
+        }
+
+        private static void RegisterServices(IIocContainer container)
+        {
+            container.RegisterAllServicesPerGraph(typeof(SomeService).Assembly);
+        }
+
+        private static void RegisterRepos(IIocContainer container)
+        {
+            container.RegisterAllServicesPerGraph(typeof(CommandDbContext).Assembly);
         }
     }
 }

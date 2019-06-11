@@ -5,4 +5,16 @@
     <AssemblyName>BoundedContext.Composition</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="composition.ESF_1" Version="1.0.1" />
+    <PackageReference Include="interceptors.ESF_1" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BoundedContext.Application\BoundedContext.Application.csproj" />
+    <ProjectReference Include="..\BoundedContext.Query\BoundedContext.Query.csproj" />
+    <ProjectReference Include="..\BoundedContext.Repository.Entityframework\BoundedContext.Repository.Entityframework.csproj" />
+    <ProjectReference Include="..\BoundedContext.Services.Acls\BoundedContext.Services.Acls.csproj" />
+  </ItemGroup>
+
 </Project>

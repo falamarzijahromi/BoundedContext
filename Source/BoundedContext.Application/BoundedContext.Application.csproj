@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BoundedContext.Contracts\BoundedContext.Contracts.csproj" />
+    <ProjectReference Include="..\BoundedContext.Domain\BoundedContext.Domain.csproj" />
   </ItemGroup>
 
 </Project>

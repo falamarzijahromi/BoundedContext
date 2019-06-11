@@ -17,5 +17,15 @@ namespace BoundedContext.Query.Repository.Entityframework
         }
 
         public DbSet<Something> Somethings { get; set; }
+
+        public override void Dispose()
+        {
+            var connection = base.Database.GetDbConnection();
+
+            connection.Close();
+            connection.Dispose();
+
+            base.Dispose();
+        }
     }
 }

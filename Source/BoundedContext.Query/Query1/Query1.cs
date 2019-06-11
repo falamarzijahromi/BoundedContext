@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using BoundedContext.Contracts.Query.Query1;
 using BoundedContext.Contracts.Query.Query1.DTOs;
 using BoundedContext.Query.Repository.Entityframework;
@@ -16,7 +17,15 @@ namespace BoundedContext.Query.Query1
 
         public List<SomethingDto> GetSomethings()
         {
-            throw new System.NotImplementedException();
+            var somethingDtos =
+                from something in _dbContext.Somethings
+                select new SomethingDto
+                {
+                    Name = something.Name,
+                    Id = something.Id,
+                };
+
+            return somethingDtos.ToList();
         }
     }
 }
