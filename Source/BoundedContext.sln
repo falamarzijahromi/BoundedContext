@@ -31,9 +31,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedContext.Services.Acl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{C1E48690-F817-48D8-ACA3-A5617CFC50BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedContext.Query.Repository.Migration", "BoundedContext.Query.Repository.Dummy\BoundedContext.Query.Repository.Migration.csproj", "{12EC40BE-08AD-49FE-AA8B-4F04B01F481B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedContext.Query.Repository.Migration", "BoundedContext.Query.Repository.Migration\BoundedContext.Query.Repository.Migration.csproj", "{12EC40BE-08AD-49FE-AA8B-4F04B01F481B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedContext.Repository.Migration", "BoundedContext.Repository.Dummy\BoundedContext.Repository.Migration.csproj", "{7FE8C7B0-A7B8-4F9D-B9DC-810A4BEDB0D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedContext.Repository.Migration", "BoundedContext.Repository.Migration\BoundedContext.Repository.Migration.csproj", "{7FE8C7B0-A7B8-4F9D-B9DC-810A4BEDB0D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
