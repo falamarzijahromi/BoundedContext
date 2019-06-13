@@ -7,7 +7,7 @@ namespace BoundedContext.Query.Repository.Entityframework.Models.Somethings
     {
         public void Configure(EntityTypeBuilder<Something> builder)
         {
-            builder.ToTable("dbo.Something");
+            builder.ToTable("Somethings");
 
             builder.HasKey(sm => sm.Id);
             builder.Property(sm => sm.Name);

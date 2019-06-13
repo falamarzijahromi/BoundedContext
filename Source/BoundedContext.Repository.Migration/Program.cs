@@ -1,4 +1,4 @@
-﻿namespace BoundedContext.Repository.Migration
+﻿namespace Migration.Executable
 {
     class Program
     {
