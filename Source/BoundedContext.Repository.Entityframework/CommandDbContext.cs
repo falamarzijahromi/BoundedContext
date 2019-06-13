@@ -1,5 +1,4 @@
-﻿using System.Transactions;
-using BoundedContext.Domain.Somethings;
+﻿using BoundedContext.Domain.Somethings;
 using Microsoft.EntityFrameworkCore;
 using UnitOfWork.ESF_1;
 
@@ -14,19 +13,15 @@ namespace BoundedContext.Repository.Entityframework
 
         public DbSet<Something> Somethings { get; set; }
 
-        public bool IsStarted => 
-            (base.Database.CurrentTransaction != null) || (Transaction.Current != null);
+        public bool IsStarted => false;
 
         public void Begin()
         {
-            base.Database.BeginTransaction();
         }
 
         public void Commit()
         {
             base.SaveChanges();
-
-            base.Database.CommitTransaction();
         }
 
         public void Rollback()

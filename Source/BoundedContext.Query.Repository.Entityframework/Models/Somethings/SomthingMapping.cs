@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace BoundedContext.Query.Repository.Entityframework.Models.Somethings
+namespace BoundedContext.Query.Entityframework.Models.Somethings
 {
     public class SomthingMapping : IEntityTypeConfiguration<Something>
     {

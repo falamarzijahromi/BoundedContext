@@ -2,7 +2,7 @@
 using System.Linq;
 using BoundedContext.Contracts.Query.Query1;
 using BoundedContext.Contracts.Query.Query1.DTOs;
-using BoundedContext.Query.Repository.Entityframework;
+using BoundedContext.Query.Entityframework;
 
 namespace BoundedContext.Query.Query1
 {

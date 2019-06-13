@@ -1,7 +1,7 @@
-﻿using BoundedContext.Query.Repository.Entityframework.Models.Somethings;
+﻿using BoundedContext.Query.Entityframework.Models.Somethings;
 using Microsoft.EntityFrameworkCore;
 
-namespace BoundedContext.Query.Repository.Entityframework
+namespace BoundedContext.Query.Entityframework
 {
     public class QueryDbContext : DbContext
     {

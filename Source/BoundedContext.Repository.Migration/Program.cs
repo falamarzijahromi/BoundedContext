@@ -1,4 +1,4 @@
-﻿namespace Migration.Executable
+﻿namespace EfCore.Migrator.Executable
 {
     class Program
     {

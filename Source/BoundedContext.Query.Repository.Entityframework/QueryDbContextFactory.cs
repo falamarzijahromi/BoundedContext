@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-namespace BoundedContext.Query.Repository.Entityframework
+namespace BoundedContext.Query.Entityframework
 {
     public class QueryDbContextFactory : IDesignTimeDbContextFactory<QueryDbContext>
     {

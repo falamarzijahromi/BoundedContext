@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.Repository.E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.Query", "BoundedContext.Query\BoundedContext.Query.csproj", "{2799C593-2D35-4FF8-889C-2A6DAC832E19}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.Query.Repository.Entityframework", "BoundedContext.Query.Repository.Entityframework\BoundedContext.Query.Repository.Entityframework.csproj", "{147F9089-2AD1-48FF-90FD-DBFB70BB039A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.Query.Entityframework", "BoundedContext.Query.Repository.Entityframework\BoundedContext.Query.Entityframework.csproj", "{147F9089-2AD1-48FF-90FD-DBFB70BB039A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.Contracts", "BoundedContext.Contracts\BoundedContext.Contracts.csproj", "{028CF5C5-551D-48BD-914F-D348E90FEC20}"
 EndProject
@@ -29,9 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.Tests.Unit",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoundedContext.Services.Acls", "BoundedContext.Services.Acls\BoundedContext.Services.Acls.csproj", "{1D014D7B-1955-444E-BC06-C40C30F91331}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{C1E48690-F817-48D8-ACA3-A5617CFC50BF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrator", "Migrator", "{C1E48690-F817-48D8-ACA3-A5617CFC50BF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Migration.Executable", "BoundedContext.Repository.Migration\Migration.Executable.csproj", "{7FE8C7B0-A7B8-4F9D-B9DC-810A4BEDB0D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCore.Migrator.Executable", "BoundedContext.Repository.Migration\EfCore.Migrator.Executable.csproj", "{7FE8C7B0-A7B8-4F9D-B9DC-810A4BEDB0D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

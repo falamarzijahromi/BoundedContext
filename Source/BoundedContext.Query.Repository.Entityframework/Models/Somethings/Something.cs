@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BoundedContext.Query.Repository.Entityframework.Models.Somethings
+namespace BoundedContext.Query.Entityframework.Models.Somethings
 {
     public class Something
     {

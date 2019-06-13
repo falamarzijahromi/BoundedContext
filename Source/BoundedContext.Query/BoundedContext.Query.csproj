@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BoundedContext.Contracts\BoundedContext.Contracts.csproj" />
-    <ProjectReference Include="..\BoundedContext.Query.Repository.Entityframework\BoundedContext.Query.Repository.Entityframework.csproj" />
+    <ProjectReference Include="..\BoundedContext.Query.Repository.Entityframework\BoundedContext.Query.Entityframework.csproj" />
   </ItemGroup>
 
 </Project>

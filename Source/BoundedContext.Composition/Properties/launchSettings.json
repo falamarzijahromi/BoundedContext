@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "BoundedContext.Composition": {
+      "commandName": "Executable",
+      "executablePath": "G:\\Projects\\GenericHost.ESF_1\\Source\\ConsoleHost\\bin\\Debug\\ConsoleHost.exe",
+      "commandLineArgs": "G:\\Projects\\BoundedContext\\Source\\BoundedContext.Composition\\bin\\Debug\\netstandard2.0 All"
+    }
+  }
+}

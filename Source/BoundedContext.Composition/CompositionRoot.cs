@@ -1,6 +1,6 @@
 ﻿using BoundedContext.Application.Service1;
+using BoundedContext.Query.Entityframework;
 using BoundedContext.Query.Query1;
-using BoundedContext.Query.Repository.Entityframework;
 using BoundedContext.Repository.Entityframework;
 using BoundedContext.Services.Acls.SomethingServices;
 using Composition.ESF_1;
