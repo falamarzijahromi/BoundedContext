@@ -54,7 +54,7 @@ namespace BoundedContext.Composition
         {
             container.RegisterAllServicesPerGraph(
                 typeof(Service1).Assembly,
-                new[] { typeof(TransactionInterceptor) });
+                new[] { typeof(UnitOfWorkInterceptor) });
         }
 
         private static void RegisterServices(IIocContainer container)
