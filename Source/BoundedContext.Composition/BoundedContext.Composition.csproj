@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="composition.ESF_1" Version="1.0.1" />
+    <PackageReference Include="composition.ESF_1" Version="1.3.2" />
     <PackageReference Include="interceptors.ESF_1" Version="1.2.0" />
   </ItemGroup>
 

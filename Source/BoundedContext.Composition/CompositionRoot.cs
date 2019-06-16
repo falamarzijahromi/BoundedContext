@@ -26,18 +26,18 @@ namespace BoundedContext.Composition
 
         private static void RegisterDbContexts(IIocContainer container)
         {
-            container.RegisterFactory(
+            container.RegisterFactoryPerGraph(
                 new[] { typeof(IUnitOfWork), typeof(CommandDbContext) },
-                () =>
+                r =>
                 {
                     var factory = new CommandDbContextFactory();
 
                     return factory.CreateDbContext(new string[0]);
                 });
 
-            container.RegisterFactory(
+            container.RegisterFactoryPerGraph(
                 new[] { typeof(QueryDbContext) },
-                () =>
+                r =>
                 {
                     var factory = new QueryDbContextFactory();
 
